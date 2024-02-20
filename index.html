@@ -35,7 +35,7 @@
 
 </section>
 
-    <p>
+    <p style="color: darkgreen;">
         Thinking about it, its so hard to comprehend that its been 4 years since we met. 
     </p>
 
@@ -84,12 +84,21 @@
 
                 console.log("yes clicked")
                 noAnswer.disabled = true;
+                yesAnswer.disabled = true;
+                alert("I love you too so much ");
+
 
             })
 
             noAnswer.addEventListener("click", function(){
 
+
                 console.log("no clikced")
+                yesAnswer.disabled = true;
+                noAnswer.disabled = true;
+                window.location.href = 'cry.html';
+                alert("");
+
             })
 
 
